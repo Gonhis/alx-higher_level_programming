@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Square class defination"""
+"""Square class def"""
+
 class Square:
     """ Declare a square class """
 
-    def __init__(self, size=0, position=(0, 0)) -> None:
+    def __init__(self, size=0, position=(0, 0)):
         """
         Intializes the attributes
 
@@ -20,11 +21,11 @@ class Square:
         return self.__size
 
     @size.setter
-    """
-        Define private instance attribute: value
-        Raise TypeError & ValueError if not int or <0 .
-        """
     def size(self, value):
+        """
+        Define private instance attribute: value
+        Raise TypeError & ValueError if not int or <0 resp.
+        """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -38,11 +39,11 @@ class Square:
         return self.__position
 
     @position.setter
-    """
+    def position(self, value):
+        """
         Function that sets position of the square
         Raise TypeError if value is not tuple or value !=2 or <0
         """
-    def position(self, value):
         if type(value) is not tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(value[0]) is not int or value[0] < 0:
