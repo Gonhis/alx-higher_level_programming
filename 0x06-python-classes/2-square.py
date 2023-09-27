@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """Square class defination."""
+
+
 class Square:
     """declare a square class"""
-    def __init__(self, size=0):
 
+    def __init__(self, size=0):
         """
         Define private instance attribute: size
         Raise TypeError & ValueError if not int or <0 .
