@@ -129,3 +129,39 @@ checking regular implementation of text_indentation function
     >>> text_indentation(340)
     Traceback (most recent call last):
     ...
+    TypeError: text must be a string
+    >>> text_indentation(["sarah ?"])
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+    >>> text_indentation(("Hello", 30))
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+cheacking when None is passed
+::
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    checking when no arguement is passed
+
+::
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+checking when more than required arguement is passed
+::
+
+    >>> text_indentation("hello", "world")
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+::
+END.
+===
