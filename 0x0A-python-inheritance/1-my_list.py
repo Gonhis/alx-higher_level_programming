@@ -1,18 +1,11 @@
 #!/usr/bin/python3
-"""
-The container of MyList class inherit from list
-"""
+"""1. My list"""
 
 
 class MyList(list):
-    """MyList class that inherits from list"""
-
-    def __init__(self):
-        """To initialize the object"""
-
-        super().__init__()
+    """A class MyList that inherits from list"""
 
     def print_sorted(self):
-        """prints the sorted list"""
+        """A function that prints the list, but sorted (ascending sort)"""
 
         print(sorted(self))
