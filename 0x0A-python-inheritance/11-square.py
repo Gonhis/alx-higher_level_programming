@@ -1,4 +1,4 @@
-/usr/bin/python3
+#!/usr/bin/python3
 """ Class that inherits from BaseGeometry """
 
 Rectangle = __import__('9-rectangle').Rectangle
@@ -25,4 +25,4 @@ class Square(Rectangle):
     def __str__(self):
         """ Print info """
 
-        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size
