@@ -5,24 +5,23 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """ class Square that inherits from Rectangle """
+    """A class Square that inherits from Rectangle (9-rectangle.py)"""
 
     def __init__(self, size):
-        """Initializing function
-            Args:
-                width: breadth of a rectangle
-                height: length of a rectangle"""
+        """A function that initializes width and height"""
 
-        self.__size = size
         self.integer_validator("size", size)
         super().__init__(size, size)
+        self.__size = size
 
     def area(self):
-        """ Calculator area """
+        """Function that computes area of a square"""
 
-        return super().area()
+        return (self.__size * self.__size)
 
     def __str__(self):
-        """ Print info """
+        """print() to print & str() to return: [Square] <width>/<height>"""
 
-        return "[Square] {:d}/{:d}".format(self.__size, self.__size
+        description = "[" + str(self.__class__.__name__) + "] "
+        description += str(self.__size) + "/" + str(self.__size)
+        return (description)
